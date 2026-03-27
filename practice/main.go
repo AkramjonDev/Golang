@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // func main(){
 // 	fmt.Println("Hello World practice" + " " + "Hello second")
@@ -20,7 +22,7 @@ import "fmt"
 // }
 
 // func main(){
-// 	// any value 
+// 	// any value
 // 	a := fmt.Sprintf("Meni yoshim %v da", 20)
 // 	fmt.Println(a)
 
@@ -47,8 +49,6 @@ import "fmt"
 // 	fmt.Printf("%s to %s, %s\n", senderName, recipient, message)
 // }
 
-
-
 // func main() {
 // 	word1 := "имя"
 // 	word2 := "твое"
@@ -60,7 +60,6 @@ import "fmt"
 // 	fmt.Println(word2, word4, word1, word3)
 // }
 
-
 // func main(){
 // 	var (
 // 		name string = "akmal"
@@ -71,19 +70,48 @@ import "fmt"
 
 // }
 
+// func main(){
+// var (
+// name string = "Аркадий"
+// surname string = "Петров"
+// age int = 19
+// )
+// var (
+// 	name2 string = "Елена"
+// 	surname2 string = "Сидорова"
+// 	age2 int = 19
+// )
+
+// fmt.Printf("Имя: %s, Фамилия: %s, Возраст: %d, Студент BPS", name, surname, age)
+// fmt.Printf("Имя: %s, Фамилия: %s, Возраст: %d, Студент BPS", name2, surname2, age2)
+
+// }
+
+// func main() {
+// 	aBoolean, bBoolean := true, true
+// 	fmt.Println("AND", aBoolean && bBoolean)
+// 	fmt.Println("OR", aBoolean || bBoolean)
+// 	fmt.Println("NOT:", !aBoolean)
+// }
+
 func main(){
-var (
-name string = "Аркадий"
-surname string = "Петров"
-age int = 19
-)
-var (
-	name2 string = "Елена"
-	surname2 string = "Сидорова"
-	age2 int = 19
-)
+	var integer1 int
+	var integer2 int
+	var integer3 int
 
-fmt.Printf("Имя: %s, Фамилия: %s, Возраст: %d, Студент BPS", name, surname, age)
-fmt.Printf("Имя: %s, Фамилия: %s, Возраст: %d, Студент BPS", name2, surname2, age2)
+	fmt.Scan(&integer1)
+	fmt.Scan(&integer2)
+	fmt.Scan(&integer3)
 
+	var  largest int
+
+	 if integer1 >= integer2 && integer1 >= integer3 {
+        largest = integer1	
+    } else if integer2 >= integer1 && integer2 >= integer3 {
+        largest = integer2
+    } else {
+        largest = integer3
+    }
+
+    fmt.Printf("The largest number among %d, %d, and %d is %d\n", integer1, integer2, integer3, largest)
 }
