@@ -94,24 +94,63 @@ import (
 // 	fmt.Println("NOT:", !aBoolean)
 // }
 
-func main(){
-	var integer1 int
-	var integer2 int
-	var integer3 int
+// func main(){
+// 	var integer1 int
+// 	var integer2 int
+// 	var integer3 int
 
-	fmt.Scan(&integer1)
-	fmt.Scan(&integer2)
-	fmt.Scan(&integer3)
+// 	fmt.Scan(&integer1)
+// 	fmt.Scan(&integer2)
+// 	fmt.Scan(&integer3)
 
-	var  largest int
+// 	var  largest int
 
-	 if integer1 >= integer2 && integer1 >= integer3 {
-        largest = integer1	
-    } else if integer2 >= integer1 && integer2 >= integer3 {
-        largest = integer2
-    } else {
-        largest = integer3
-    }
+// 	 if integer1 >= integer2 && integer1 >= integer3 {
+//         largest = integer1
+//     } else if integer2 >= integer1 && integer2 >= integer3 {
+//         largest = integer2
+//     } else {
+//         largest = integer3
+//     }
 
-    fmt.Printf("The largest number among %d, %d, and %d is %d\n", integer1, integer2, integer3, largest)
+//     fmt.Printf("The largest number among %d, %d, and %d is %d\n", integer1, integer2, integer3, largest)
+// }
+
+// func main() {
+// 	var score int
+// 	// fmt.Scan(&score)
+// 	if 90 <= score  {
+// 		fmt.Printf("A")
+// 	} else if 80 <= score {
+// 		fmt.Printf("B")
+// 	} else if 70 <= score {
+// 		fmt.Printf("C")
+// 	} else if 60 <= score {
+// 		fmt.Printf("D")
+// 	} else {
+// 		fmt.Printf("F")
+// 	}
+// }
+
+// func main() {
+// 	var year = 2028
+
+// 	if year % 400 == 0  {
+// 		fmt.Println(true)
+// 	} else if year % 100 == 0 {
+// 		fmt.Println(false)
+// 	} else if year % 4 == 0{
+// 		fmt.Println(true)
+// 	} else {
+// 		fmt.Println(false)
+// 	}
+// }
+
+func main() {
+	var drink string = "coffee"
+	var meal string = "beef"
+	var subMeal string = "pie"
+	var time string = "12:30"
+
+	fmt.Printf("I wanna some %d, my favorite meal - %d. Give me also %d. I will come soon... %d", drink, meal, subMeal, time)
 }
